@@ -40,7 +40,13 @@ color_opcion = colores[color_nombre]
 opciones = {
     "title": {"text": "Stock de productos"},
     "tooltip": {},
-    "xAxis": {"data": nombres},
+    "xAxis": {
+    "data": nombres,
+    "axisLabel": {
+        "rotate": 30,  # Puedes probar también 45 o 60 grados
+        "interval": 0  # Muestra todas las etiquetas (sin saltarse ninguna)
+        }
+    },
     "yAxis": {},
     "series": [{
         "name": "Stock",
