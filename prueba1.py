@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from streamlit_echarts import st_echarts
+
 
 data = [
     [1, "Pan blanco", "Alimentos", 1.50, 25],
