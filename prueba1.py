@@ -35,4 +35,4 @@ opciones = {
     }],
 }
 
-st_echarts(options=opciones, height="400px")
+st_echarts(options=opciones, height="400px", width="700px")
