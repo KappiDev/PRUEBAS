@@ -23,6 +23,14 @@ productos = pd.read_csv("Productos.csv")
 nombres = productos["Producto"].tolist()
 stocks = productos["Stock"].tolist()
 
+color_opcion = st.selectbox("Selecciona el color de la gráfica:", {
+    "Azul": "#3498db",
+    "Rojo": "#e74c3c",
+    "Verde": "#2ecc71",
+    "Naranja": "#e67e22",
+    "Púrpura": "#9b59b6"
+})
+
 opciones = {
     "title": {"text": "Stock de productos"},
     "tooltip": {},
@@ -32,6 +40,7 @@ opciones = {
         "name": "Stock",
         "type": "bar",
         "data": stocks,
+        "itemStyle": {"color": color_opcion}
     }],
 }
 
