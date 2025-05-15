@@ -32,7 +32,7 @@ colores = {
 }
 
 # Mostrar selector
-color_nombre = st.selectbox("Selecciona el color de la gráfica:", list(colores.keys()))
+color_nombre = st.selectbox("Selecciona olaolaola de la gráfica:", list(colores.keys()))
 
 # Obtener el código de color
 color_opcion = colores[color_nombre]
